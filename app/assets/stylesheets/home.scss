@@ -2,10 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand";
+   
+  }
+
+nav {
+    font-family: "Quicksand";
+    color: #f1356d;  
+}
+
 div {
+  color: #f1356d;  
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+a{
+    color: #f1356d;
+    margin-left: 16px;
+    padding: 6px;
+}
+
+img {
     display: flex;
+    width: 70vw;
+    height:70vh;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     }
+
+    
 

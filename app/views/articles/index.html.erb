@@ -1,7 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Articles</h1>
 
+<h1>Articles</h1>
+<script type="text/javascript">
+
+        var clicks = 0;
+        function hello() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+        </script>
 <table>
   <thead>
     <tr>
@@ -20,6 +28,8 @@
         <td><%= article.body %></td>
         <td><%= article.author %></td>
         <td><%= article.published_date %></td>
+        <td><button type="button" onclick="hello()">Like</button><td>
+        <p>Likes: <a id="clicks">0</a></p>
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
