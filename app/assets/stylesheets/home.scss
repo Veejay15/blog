@@ -7,28 +7,43 @@
 * {
     margin: 0;
     font-family: "Quicksand";
-   
+    box-sizing: border-box;
   }
 
-nav {
+.navbar {
     font-family: "Quicksand";
     color: #f1356d;  
 }
 
 div {
-  color: #f1356d;  
+  color: #0f0e0eb0;  
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
-  text-decoration:none ;
 }
+
+div>h3 {
+  color: #0f0e0eb0; 
+}
+
+.row {
+  display: flex;
+}
+
+  /* Create three equal columns that sits next to each other */
+h2 {
+  color: #f1356d;
+  margin-left: auto;
+  padding: 6px;
+  text-decoration: underline;
+  }
 
 a{
     color: #f1356d;
-    margin-left: 16px;
+    margin-left: auto;
     padding: 6px;
 }
 
@@ -36,10 +51,14 @@ img {
     display: flex;
     width: 70vw;
     height:70vh;
-    justify-content: center;
-    align-items: center;
+    float: left;
     border-radius: 20px;
+    margin-right: 100px;
     }
+
+   
+    
+  
 
     
 
