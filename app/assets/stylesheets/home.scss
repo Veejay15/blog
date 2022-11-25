@@ -26,7 +26,13 @@ div {
 }
 
 div>h3 {
-  color: #0f0e0eb0; 
+  color: #5f0f0fb0; 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  padding: 10px;
+  border-radius:15px;
+
 }
 
 .row {
@@ -49,11 +55,10 @@ a{
 
 img {
     display: flex;
-    width: 70vw;
+    width: 50vw;
     height:70vh;
     float: left;
     border-radius: 20px;
-    margin-right: 100px;
     }
 
    
