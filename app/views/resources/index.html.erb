@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<div class="links">
+    <a href="http://[::1]:3000">Home</a>
+    <a href="http://[::1]:3000/articles">Articles</a>
+    <a href="http://[::1]:3000/resources">Resources</a>
+    <a href="http://[::1]:3000/communities">Community</a>
+    <a href="/">Contact Us</a>
+    <a href="/">FAQs</a>
+</div>
+<h1>Resources</h1>
+<h3>Got stuck? check out below summary of ruby on rails resources.</h3>
+<hr>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Summary</th>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resources.each do |resource| %>
+      <tr>
+        <td><%= resource.subject %></td>
+        <td><%= resource.summary %></td>
+        <td><%= resource.link %></td>
+        <td><%= link_to 'Show', resource %></td>
+        <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
+        <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resource', new_resource_path %>

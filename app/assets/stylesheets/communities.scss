@@ -1,4 +1,4 @@
-// Place all the styles related to the articles controller here.
+// Place all the styles related to the communities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -6,6 +6,7 @@ th{
     font-family: "Quicksand";
     font-size: large;
     color: #f1356d;  
+    padding-top: 10px;
 }
 
 h3{
@@ -15,11 +16,3 @@ h3{
     
 }
 
-image {
-    display: flex;
-    width: 20vw;
-    height:20vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    }

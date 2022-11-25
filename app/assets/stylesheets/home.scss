@@ -16,6 +16,7 @@
 }
 
 div {
+  font-size: medium;
   color: #0f0e0eb0;  
   padding: 20px;
   display: flex;
@@ -23,13 +24,15 @@ div {
   max-width: 700px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  
 }
 
 div>h3 {
-  color: #5f0f0fb0; 
+  color: #fa4074; 
+  font-style: normal;
   display: grid;
   grid-template-columns: auto auto auto;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to right, #90cafc 0%, #1cf6fd 100%);
   padding: 10px;
   border-radius:15px;
 
